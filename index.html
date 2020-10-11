@@ -18,105 +18,128 @@
   <body>
     <!--Шапка-->
     <header class="header">
-      <nav class="container main-nav">
-        <a href="./index.html" class="logo">
-          Web<span class="logo-span">Studio</span></a
-        >
-        <ul class="site-nav list">
-          <li class="item">
-            <a href="./index.html" class="link current">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
-        </ul>
-
-        <ul class="auth-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="link-icon envelope">
-                <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link"
-              ><svg class="link-icon smartphone">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div class="container flexbox">
+        <a href="/">
+          <p class="logo">Web<span class="header-logo">Studio</span></p>
+        </a>
+        <div class="site-nav-menu" data-menu>
+          <nav class="header-navigation">
+            <ul class="navigation-list flexbox">
+              <li class="navigation-list-item">
+                <a href="./index.html" class="navigation-link current">Студия</a>
+              </li>
+              <li class="navigation-list-item">
+                <a href="./portfolio.html" class="navigation-link">
+                  Портфолио</a>
+              </li>
+              <li class="navigation-list-item">
+                <a href="" class="navigation-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+    
+          <ul class="contacts">
+            <li class="contacts-item">
+              <span>
+                <a class="contacts-link" href="mailto:info@devstudio.com">
+                  <svg class="contacts-icon" width="16" height="12">
+                    <use href="./symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </span>
+            </li>
+            <li class="contacts-item">
+              <span>
+                <a class="contacts-link" href="tel:+38-096-111-11-11"><svg class="contacts-icon" width="10" height="16">
+                    <use href="./symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="button-menu" aria-expanded="false" data-menu-button>
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./symbol-defs.svg#icon-close_40px"></use>
+            <use class="icon-menu" href="./symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <!--Герой-->
-      <section class="hero-container">
+    <section class="hero">
+      <div class="container">
         <h1 class="hero-title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <a class="button" data-modal-open>Заказать услугу</a>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button type="button" class="close" data-modal-close>✕</button>
-
-            <form class="form modal-form" autocomplete="on">
-              <p class="title">Оставьте свои данные, мы вам перезвоним</p>
-              <div class="form-field">
-                <label for="name" class="input-title">Имя</label>
-                <input type="text" name="name" id="name" class="input" />
-                <svg class="icon">
-                  <use href="./images/sprite-form.svg#icon-name"></use>
-                </svg>
-              </div>
-              <div class="form-field">
-                <label for="tel" class="input-title">Телефон</label>
-                <input type="tel" name="tel" id="tel" class="input" />
-                <svg class="icon">
-                  <use href="./images/sprite-form.svg#icon-phone"></use>
-                </svg>
-              </div>
-              <div class="form-field">
-                <label for="mail" class="input-title">Почта</label>
-                <input type="email" name="mail" id="mail" class="input" />
-                <svg class="icon">
-                  <use href="./images/sprite-form.svg#icon-mail"></use>
-                </svg>
-              </div>
-              <div class="form-field">
-                <label for="comment" class="input-title">Комментарий</label>
-                <textarea
-                  name="comment"
-                  id="comment"
-                  cols="30"
-                  rows="10"
-                  placeholder="Введите текст"
-                  class="input-comment"
-                ></textarea>
-              </div>
-
-              <div class="form-field form-checkbox">
-                <label class="title"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a class="modal-link" href="">Условия договора</a>
-                  <input
-                    type="checkbox"
-                    name="checkbox"
-                    class="checkbox-input"
-                  />
-                  <span class="checkbox"> </span>
-                </label>
-              </div>
-
-              <button type="submit" class="button">Отправить</button>
-            </form>
-          </div>
+        <button class="button hero-button" data-modal-open>
+          Заказать услугу
+        </button>
+      </div>
+    </section>
+    
+    
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          ✕
+        </button>
+    
+        <div class="modal-content">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+    
+          <form class="form modal-form">
+            <div class="modal-form-field">
+              <label for="name" class="modal-form-label">Имя</label>
+              <input type="text" name="name" id="name" class="modal-form-input" />
+              <svg class="modal-form-icon">
+                <use href="./symbol-defs.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+    
+            <div class="modal-form-field">
+              <label for="tel" class="modal-form-label">Телефон</label>
+              <input type="tel" name="tel" id="tel" class="modal-form-input" />
+              <svg class="modal-form-icon">
+                <use href="./symbol-defs.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+    
+            <div class="modal-form-field">
+              <label for="email" class="modal-form-label">Почта</label>
+              <input type="email" name="email" id="email" class="modal-form-input" />
+              <svg class="modal-form-icon form-email-icon">
+                <use href="./symbol-defs.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+    
+            <div class="modal-form-field">
+              <label for="comments" class="modal-form-label">Комментарий</label>
+              <textarea class="modal-form-textarea" name="comments" id="comments" cols="30" rows="10"
+                placeholder="Введите текст">
+                      </textarea>
+            </div>
+    
+            <div class="modal-form-field form-checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" name="checkbox" class="checkbox-input" />
+                <span class="checkbox"> </span>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="modal-link" href="">Условия договора</a>
+              </label>
+            </div>
+    
+            <button type="submit" class="button modal-submit-button">
+              Отправить
+            </button>
+          </form>
         </div>
-      </section>
+      </div>
+    </div>
 
       <!--Особенности-->
       <section class="section features">
@@ -484,5 +507,6 @@
     </footer>
 
     <script src="./JS/modal.js"></script>
+    <script src="./JS/menu.js"></script>
   </body>
 </html>
