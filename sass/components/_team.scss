@@ -1,41 +1,54 @@
 .team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: auto;
 
-  p {
-    text-align: center;
+  &-field {
+    justify-content: space-between;
+    margin-top: 50px;
   }
-
   &-title {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-
-    letter-spacing: 0.03em;
-    color: $titlecolour;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
     text-align: center;
   }
-}
-
-.employees {
-  display: flex;
-
-  .item {
-    width: calc((100% - 30px * 3) / 4);
-    margin-right: 30px;
-    padding-bottom: 30px;
+  &-member {
+    text-align: center;
+    background-color: $primarywhitecolour;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    background-color: $primarywhitecolour;
+    padding-bottom: 24px;
+  }
+
+  &-member:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
-.post {
-  font-weight: 400;
+.name-title {
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.2;
   text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.member-information {
+  padding-top: 30px;
+}
+
+.member-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.member-proffesion {
+  margin-bottom: 16px;
+  color: $textcolour;
 }
