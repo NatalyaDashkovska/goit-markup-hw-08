@@ -434,77 +434,73 @@
       </section>
     </main>
     <!--Футер-->
-    <footer class="footer">
-      <div class="container">
-        <div class="adress footer-mg">
-          <a href="./index.html" class="logo">
-            Web<span class="logo-span-footer">Studio</span></a
-          >
-          <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
-          <a href="mailto:info@devstudio.com" class="link"
-            >info@devstudio.com</a
-          >
-          <br />
-          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-        </div>
-        <div class="footer-invite footer-mg">
-          <h2 class="footer-invite-title">Присоединяйтесь</h2>
-          <ul class="footer-icon-list">
-            <li class="footer-social-icon">
-              <a class="footer-social-link" href="">
-                <svg class="social-icon footer-social-item">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-icon">
-              <a class="footer-social-link" href="">
-                <svg class="social-icon footer-social-item">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-icon">
-              <a class="footer-social-link" href="">
-                <svg class="social-icon footer-social-item">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-icon">
-              <a class="footer-social-link" href="">
-                <svg class="social-icon footer-social-item">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-invite-mail footer-mg">
-          <h3 class="mail-title">Подпишитесь на рассылку</h3>
-          <div class="mail-send">
-            <div class="mail-mg">
-              <label for="mail"></label>
-              <input
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="E-mail"
-                class="mail-input"
-              />
-            </div>
-            <div>
-              <button type="button" class="letter-button">
+    <section class="footer">
+      <footer>
+        <div class="container flexbox">
+          <div class="footer-part">
+            <a href="./" class="logo footer-logo">Web<span class="footer-logo-part">Studio</span></a>
+            <address class="footer-address">
+              г. Киев, пр-т Леси Украинки, 26
+              <span class="contact-links">
+                <a class="contact-links-item" href="mailto:info@devstudio.com">info@devstudio.com
+                </a>
+                <a class="contact-links-item" href="tel:+38-096-111-11-11">
+                  +38-096-111-11-11
+                </a>
+              </span>
+            </address>
+          </div>
+          <div class="footer-part footer-part-joining">
+            <h3 class="footer-title joining">Присоединяйтесь</h3>
+            <ul class="social">
+              <li class="social-item">
+                <a class="social-item-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Ссылка на Инстаграм">
+                  <svg class="social-icon">
+                    <use href="./symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-item-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Ссылка на Твиттер">
+                  <svg class="social-icon">
+                    <use href="./symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-item-link" href="https://facebook.com/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Ссылка на Фейсбук">
+                  <svg class="social-icon">
+                    <use href="./symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-item-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Ссылка на Линкедин">
+                  <svg class="social-icon">
+                    <use href="./symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-part footer-part-sighning">
+            <h3 class="footer-title">Подпишитесь на рассылку</h3>
+            <form class="signing-form">
+              <input type="email" name="mail" id="mail" placeholder="E-mail" class="form-input" />
+              <button type="button" class="button sign-in-button">
                 Подписаться
-                <svg class="icon-plane">
-                  <use href="./images/sprite-form.svg#icon-plane"></use>
+                <svg class="button-icon">
+                  <use href="./symbol-defs.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
     <script src="./JS/modal.js"></script>
     <script src="./JS/menu.js"></script>
