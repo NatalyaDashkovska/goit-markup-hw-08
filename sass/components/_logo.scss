@@ -1,29 +1,18 @@
 .logo {
   color: $accentcolour;
-  font-family: Raleway, serif;
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
   font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration-line: none;
+  padding-top: 16px;
+}
 
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  justify-items: flex-start;
+.header-logo {
+  color: #000;
 }
-.logo-span {
-  color: $titlecolour;
-  font-family: Raleway, serif;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  text-decoration: none;
-}
-.logo-span-footer {
+
+.footer-logo-part {
   color: $primarywhitecolour;
-  font-family: Raleway, serif;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  text-decoration: none;
 }
