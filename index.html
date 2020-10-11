@@ -185,43 +185,54 @@
       </div>
     </section>
       <!--Чем мы занимаемся-->
-      <section class="section task">
-        <div class="container">
-          <h2 class="title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li class="item">
-              <div class="border">
-                <img
-                  src="./images/first.jpg"
-                  alt="Разработчик печатает код"
-                  width="370"
-                />
-                <div class="title">Десктопные приложения</div>
-              </div>
-            </li>
-            <li class="item">
-              <div class="border">
-                <img
-                  src="./images/second.jpg"
-                  alt="Разработчик работает над мобильным приложением"
-                  width="370"
-                />
-                <div class="title">Мобильные приложения</div>
-              </div>
-            </li>
-            <li class="item">
-              <div class="border">
-                <img
-                  src="./images/third.jpg"
-                  alt="Дизайнер работает с палитрой на планшете"
-                  width="370"
-                />
-                <div class="title">Дизайнерские решения</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <section class="tasks">
+      <div class="container">
+        <h2 class="main-title">Чем мы занимаемся</h2>
+        <ul class="tasks-list">
+          <li class="tasks-item">
+            <div class="tasks-thumb">
+              <picture>
+                <source srcset="
+                            ./images/activity_desktop1.jpg    1x,
+                            ./images/activity_desktop1@2x.jpg 2x
+                          " media="(min-width: 1200px)" />
+    
+                <img class="tasks-photo" src="./images/activity1.jpg" alt="Разработчик печатает код" width="370" />
+              </picture>
+              <p class="tasks-name">Десктопные приложения</p>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <div class="tasks-thumb">
+              <picture>
+                <source srcset="
+                            ./images/activity_desktop2.jpg    1x,
+                            ./images/activity_desktop2@2x.jpg 2x
+                          " media="(min-width: 1200px)" />
+    
+                <img class="tasks-photo" src="./images/activity2.jpg" alt="Разработчик работает над мобильным приложением"
+                  width="370" />
+              </picture>
+              <p class="tasks-name">Мобильные приложения</p>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <div class="tasks-thumb">
+              <picture>
+                <source srcset="
+                            ./images/activity_desktop3.jpg    1x,
+                            ./images/activity_desktop3@2x.jpg 2x
+                          " media="(min-width: 1200px)" />
+    
+                <img class="tasks-photo" src="./images/activity3.jpg" alt="Дизайнер работает с палитрой на планшете"
+                  width="370" />
+              </picture>
+              <p class="tasks-name">Дизайнерские решения</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
       <!--Наша команда-->
     <section class="team">
       <div class="container">
@@ -459,55 +470,55 @@
       </div>
     </section>
       <!-- Клиенты -->
-      <section class="section">
-        <div class="container">
-          <h2 class="title">Постоянные клиенты</h2>
-          <ul class="clients">
-            <li class="item">
-              <a class="link" href="">
-                <svg class="client logo1">
-                  <use href="./images/sprite.svg#icon-logo1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="">
-                <svg class="client logo2">
-                  <use href="./images/sprite.svg#icon-logo2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="">
-                <svg class="client logo3">
-                  <use href="./images/sprite.svg#icon-logo3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="">
-                <svg class="client logo4">
-                  <use href="./images/sprite.svg#icon-logo4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="">
-                <svg class="client logo5">
-                  <use href="./images/sprite.svg#icon-logo5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="">
-                <svg class="client logo6">
-                  <use href="./images/sprite.svg#icon-logo6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <section class="clients">
+      <div class="container">
+        <h2 class="main-title">Постоянные клиенты</h2>
+        <ul class="clients-list">
+          <li class="clients-item">
+            <a class="clients-link" href="">
+              <svg class="clients-logo" width="44" height="49">
+                <use href="./symbol-defs.svg#icon-logo1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link" href="">
+              <svg class="clients-logo" width="40" height="52">
+                <use href="./symbol-defs.svg#icon-logo2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link" href="">
+              <svg class="clients-logo" width="41" height="42">
+                <use href="./symbol-defs.svg#icon-logo3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link" href="">
+              <svg class="clients-logo" width="80" height="42">
+                <use href="./symbol-defs.svg#icon-logo4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link" href="">
+              <svg class="clients-logo" width="59" height="47">
+                <use href="./symbol-defs.svg#icon-logo5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link" href="">
+              <svg class="clients-logo" width="88" height="45">
+                <use href="./symbol-defs.svg#icon-logo6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     </main>
     <!--Футер-->
     <section class="footer">
