@@ -1,0 +1,44 @@
+.features {
+  padding-top: 94px;
+}
+
+.advantages {
+  display: flex;
+
+  .title {
+    color: $titlecolour;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .item {
+    width: 270px;
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .icon {
+    background-color: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

@@ -1,0 +1,45 @@
+.task {
+  padding-top: 0px;
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+  }
+  .item {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    outline: 1px solid #eeeeee;
+  }
+
+  .item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+.border {
+  position: relative;
+
+  .title {
+    position: absolute;
+
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 27px;
+    color: $primarywhitecolour;
+
+    transform: translateY(-100%);
+  }
+}
