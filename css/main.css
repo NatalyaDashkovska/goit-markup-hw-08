@@ -959,52 +959,66 @@ a:hover {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.advantages .title {
-  color: #212121;
-  font-weight: 700;
+.features-title {
+  font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.advantages .item {
-  width: 270px;
+.features-block {
+  display: block;
 }
 
-.advantages .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.advantages .icon {
-  background-color: #f5f4fa;
-  width: 270px;
-  height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
+.features-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.advantages .title {
-  margin-top: 0px;
-  margin-bottom: 10px;
+.features-list {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.advantages .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.features-text {
+  font-weight: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.features-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-item:nth-child(1)::before {
+  background-image: url(../images/pictures/antenna.svg);
+}
+
+.features-item:nth-child(2)::before {
+  background-image: url(../images/pictures/clock.svg);
+}
+
+.features-item:nth-child(3)::before {
+  background-image: url(../images/pictures/diagram.svg);
+}
+
+.features-item:nth-child(4)::before {
+  background-image: url(../images/pictures/astronaut.svg);
 }
 
 .footer {
