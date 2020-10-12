@@ -1,0 +1,154 @@
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+
+  .site-nav-menu {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 24px;
+    padding-top: 26px;
+  }
+
+  .header-logo {
+    margin-right: 88px;
+  }
+
+  .current::after {
+    margin-bottom: -25px;
+  }
+
+  .contacts {
+    margin-bottom: 0;
+    font-size: 12px;
+    text-align: start;
+    margin-top: 21px;
+  }
+
+  .contacts-item:first-child {
+    margin-bottom: 10px;
+  }
+
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .button-menu {
+    display: none;
+  }
+
+  .header-navigation {
+    font-size: 14px;
+    padding-top: 32px;
+    margin-right: 84px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero_tablet.jpg);
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-item {
+    width: 354px;
+  }
+
+  .features-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .features-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .features-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+
+  .team-member {
+    width: 354px;
+  }
+
+  .team-member:not(:nth-child(-n + 2)) {
+    margin-bottom: 0;
+  }
+
+  .team-field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .clients-item:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .clients-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  .clients-item {
+    width: 226px;
+  }
+
+  .footer-title.joining {
+    margin-right: 35px;
+  }
+
+  .signing-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signing-form-window {
+    padding-right: 0;
+  }
+
+  .buttons-field {
+    margin-left: 64px;
+  }
+
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 354px;
+    }
+
+    &-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &-item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  .footer-part {
+    width: 100%;
+  }
+
+  .footer-part:not(:last-child) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .footer-title.joining {
+    margin-right: 0;
+  }
+
+  .portfolio-buttons {
+    padding-bottom: 30px;
+  }
+}
