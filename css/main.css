@@ -141,12 +141,6 @@ a:hover {
 
 .contacts-link {
   color: #757575;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 }
 
 .contacts-item:first-child {
@@ -1109,6 +1103,9 @@ a:hover {
     text-align: start;
     margin-top: 21px;
   }
+  .contacts-link {
+    font-weight: 500;
+  }
   .contacts-item:first-child {
     margin-bottom: 10px;
   }
@@ -1254,6 +1251,12 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
   }
   .contacts-item:first-child {
     margin-bottom: 0;
@@ -1389,7 +1392,7 @@ a:hover {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 .features-block {
